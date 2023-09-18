@@ -1,18 +1,25 @@
 .header {
   background-color: var(--grey-color-bg);
+  width: 100%;
+
+  position: fixed;
 
   &__container {
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
   }
 
   &__left {
+
     grid-column: 6 span;
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 1px 0;
   }
   &__right {
+
     grid-column: 6 span;
     display: flex;
     align-items: center;

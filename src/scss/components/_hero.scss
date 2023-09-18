@@ -1,0 +1,36 @@
+.hero {
+  margin-top: -119px;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--vh);
+  min-height: 765px;
+
+
+  &__logo {
+    margin-top: 150px;
+    margin-bottom: 30px;
+  }
+  &__content {
+    margin-left: 40px;
+  }
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+  }
+  &__btn {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--dark-color);
+
+  }
+}

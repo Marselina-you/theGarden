@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 20px;
+  border: 1px solid var(--yellow-color);
+  padding: 12px 24px;
+  background-color: var(--yellow-color);
+  color: var(--dark-color);
+  text-transform: capitalize;
+  transition: all .9s ease-in-out;
+
+  @include for-desktop {
+
+    &:hover {
+      border: 1px solid var(--yellow-color);
+      background-color: var(--dark-violet-color);
+      color: var(--yellow-color);
+
+
+
+    }
+  }
+
+}

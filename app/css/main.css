@@ -176,6 +176,8 @@ a {
 
 .header {
   background-color: var(--grey-color-bg);
+  width: 100%;
+  position: fixed;
 }
 .header__container {
   display: -ms-grid;
@@ -192,7 +194,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 1px 0;
 }
 .header__right {
   -ms-grid-column-span: 6;
@@ -258,5 +260,63 @@ a {
 }
 .nav__link:active {
   color: var(--orange-color);
+}
+
+.hero {
+  margin-top: -119px;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: var(--vh);
+  min-height: 765px;
+}
+.hero__logo {
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+.hero__content {
+  margin-left: 40px;
+}
+.hero__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7.2px;
+}
+.hero__btn {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.btn {
+  border-radius: 20px;
+  border: 1px solid var(--yellow-color);
+  padding: 12px 24px;
+  background-color: var(--yellow-color);
+  color: var(--dark-color);
+  text-transform: capitalize;
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+}
+@media (min-width: 1025px) {
+  .btn:hover {
+    border: 1px solid var(--yellow-color);
+    background-color: var(--dark-violet-color);
+    color: var(--yellow-color);
+  }
 }
 /*# sourceMappingURL=main.css.map */
