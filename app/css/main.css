@@ -76,6 +76,7 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  color: var(--dark-violet-color);
 }
 
 img {
@@ -277,7 +278,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   height: var(--vh);
-  min-height: 765px;
+  min-height: 810px;
 }
 .hero__logo {
   margin-top: 150px;
@@ -307,7 +308,7 @@ a {
   border: 1px solid var(--yellow-color);
   padding: 12px 24px;
   background-color: var(--yellow-color);
-  color: var(--dark-color);
+  color: var(--dark-violet-color);
   text-transform: capitalize;
   -webkit-transition: all 0.9s ease-in-out;
   transition: all 0.9s ease-in-out;
@@ -317,6 +318,83 @@ a {
     border: 1px solid var(--yellow-color);
     background-color: var(--dark-violet-color);
     color: var(--yellow-color);
+  }
+}
+
+.ticker-block {
+  background-color: var(--light-yellow-color);
+  padding: 40px 0;
+}
+.ticker-block__title {
+  margin: 0;
+  padding-bottom: 40px;
+  text-align: center;
+  color: var(--dark-violet-color);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ticker {
+  position: relative;
+  overflow: hidden;
+}
+
+.ticker__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ticker__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 50px;
+  font-size: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--orange-color);
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  -webkit-animation: ticker 5s linear infinite;
+  animation: ticker 5s linear infinite;
+}
+.ticker__item-img {
+  margin-bottom: 35px;
+}
+.ticker__item-img svg {
+  fill: #797183;
+  width: 100px;
+  height: 100px;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 /*# sourceMappingURL=main.css.map */
