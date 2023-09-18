@@ -1,0 +1,39 @@
+.social {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: var(--second-offset);
+    }
+  }
+  &__link {
+    display: block;
+    outline: none;
+    transition: opacity 0.3s ease-in-out;
+
+
+
+    svg {
+      width: 44px;
+      height: 44px;
+      fill: var(--grey-color);
+
+    }
+
+
+    &:focus {
+      opacity: 0.8;
+    }
+    @include for-desktop {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    &:active {
+      opacity: 0.8;
+    }
+
+
+
+  }
+}

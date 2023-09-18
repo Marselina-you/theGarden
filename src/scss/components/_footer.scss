@@ -1,0 +1,31 @@
+.footer {
+
+  background-color: #2E2C38;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--light-color);
+
+  }
+  &__social {
+    margin-bottom: 20px;
+  }
+  &__copyright {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: var(--light-color);
+  }
+}
