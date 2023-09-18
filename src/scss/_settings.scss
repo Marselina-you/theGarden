@@ -83,6 +83,11 @@ a {
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
 }
+.container-middle {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-middle);
+}
 .container-fluid {
   margin: 0 auto;
   padding: 0 var(--container-offset);

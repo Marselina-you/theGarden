@@ -1,0 +1,58 @@
+.nav {
+
+  &__list {
+    display: flex;
+    //justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  &__item {
+
+      margin-right: 40px;
+
+
+    @include tablet {
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+    }
+  }
+
+  &__link {
+    color: var(--light-color);
+    font-size: 24px;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+
+    @include tablet {
+      font-size: 30px;
+    }
+
+    &:focus {
+      outline-offset: 2px solid var(--orange-color);
+
+
+    }
+
+    @include for-desktop {
+      &:hover {
+        color: var(--light-yellow-color);
+      }
+    }
+
+
+      &:active {
+        color: var(--orange-color);
+
+      }
+
+
+  }
+
+}

@@ -1,0 +1,29 @@
+.header {
+  background-color: var(--grey-color-bg);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__left {
+    grid-column: 6 span;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+  &__right {
+    grid-column: 6 span;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 20px;
+
+  }
+  &__logo {
+    img {
+      width: 60%;
+    }
+  }
+
+}

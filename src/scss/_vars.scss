@@ -8,14 +8,15 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-
+  --content-middle: 1596px;
+  --container-middle: calc(var(--content-middle) + (var(--container-offset) * 2));
 
   --content-fluid: 1920px;
   --container-fluid: calc(var(--content-fluid) + (var(--container-offset) * 2));
 
 
 
-  
+
 
   // colors
   --light-color: #fff;
@@ -23,10 +24,12 @@
   --violet-color: #889df3;
   --dark-violet-color: #352744;
   --yellow-color: #FAE94A;
-  --yellow-color: #EEE8AB;
+  --light-yellow-color: #EEE8AB;
   --orange-color: #E78F3D;
   --blue-color: #3960FF;
   --grey-color: #D9DCE8;
+
+  --grey-color-bg: rgba(91, 87, 62, .7);
 
 
 
