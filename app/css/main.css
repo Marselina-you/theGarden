@@ -346,7 +346,6 @@ a {
 }
 
 .ticker-block {
-  margin-bottom: 70px;
   background-color: var(--light-yellow-color);
   padding: 40px 0;
 }
@@ -400,7 +399,7 @@ a {
 }
 
 .categories {
-  margin-bottom: 70px;
+  margin: 100px 0;
   background-color: inherit;
 }
 .categories__list {
@@ -556,9 +555,74 @@ a {
   opacity: 0.8;
 }
 
-.quotes {
-  margin-top: 70px;
+.contacts {
   margin-bottom: 70px;
+  background-color: inherit;
+}
+.contacts__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  gap: 50px;
+}
+.contacts__img {
+  -ms-grid-column-span: 7;
+  grid-column: 7 span;
+}
+.contacts__img img {
+  width: 70%;
+  height: 100%;
+}
+.contacts__block {
+  -ms-grid-column-span: 5;
+  grid-column: 5 span;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.contacts__address {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 55px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+.contacts__address span {
+  display: inline-block;
+  font-weight: 400;
+  font-style: italic;
+}
+.contacts__title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
+  text-align: left;
+}
+.contacts__btn {
+  margin-bottom: 60px;
+  font-size: 30px;
+}
+.contacts__list {
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.quotes {
+  margin: 100px 0;
   background-color: inherit;
 }
 .quotes__container {
@@ -654,7 +718,7 @@ a {
 }
 .quote-block__btn {
   margin-top: 50px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 blockquote {
@@ -805,7 +869,7 @@ time {
   margin-left: 57px;
 }
 .list__btn {
-  font-size: 30px;
+  font-size: 32px;
 }
 .list__btn .btn {
   padding: 50px 80px;
@@ -937,7 +1001,7 @@ time {
   margin-left: 57px;
 }
 .phone__btn {
-  text-align: right;
+  text-align: center;
   font-size: 30px;
 }
 
