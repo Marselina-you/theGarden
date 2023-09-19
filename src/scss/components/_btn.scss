@@ -1,11 +1,15 @@
 .btn {
   border-radius: 20px;
-  border: 1px solid var(--yellow-color);
+  font-weight: 700;
   padding: 12px 24px;
-  background-color: var(--yellow-color);
-  color: var(--dark-violet-color);
   text-transform: capitalize;
   transition: all .9s ease-in-out;
+
+  &--yellow {
+    border: 1px solid var(--yellow-color);
+    background-color: var(--yellow-color);
+    color: var(--dark-violet-color);
+
 
   @include for-desktop {
 
@@ -18,5 +22,26 @@
 
     }
   }
+
+  }
+  &--grey {
+    color: var(--dark-violet-color);
+    //border: 1px solid var(--dark-violet-color);
+    background-color: var(--grey-color);
+    color: var(--dark-violet-color);
+
+    @include for-desktop {
+
+      &:hover {
+        //border: 1px solid var(--dark-violet-color);
+        background-color: var(--dark-violet-color);
+        color: var(--light-color);
+
+
+
+      }
+    }
+  }
+
 
 }
