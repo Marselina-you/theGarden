@@ -188,7 +188,7 @@ a {
 .header {
   background-color: var(--grey-color-bg);
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 9000;
 }
 .header__container {
@@ -654,6 +654,110 @@ blockquote {
 
 time {
   font-size: 16px;
+}
+
+.assortiment {
+  margin-bottom: 70px;
+}
+
+.assortiment-slider-swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.assortiment-swiper-wrap {
+  padding-bottom: 30px;
+}
+
+.assortiment-slider-wrap {
+  height: 110px;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.assortiment-slider {
+  height: 550px;
+  width: 100%;
+}
+
+.assortiment-slider .assortiment-slider__slide {
+  border-radius: 15px;
+  text-align: center;
+  color: var(--light-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.assortiment-slider .assortiment-slider__slide-title {
+  font-size: 40px;
+}
+.assortiment-slider .assortiment-slider__slide-descr {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  max-width: 60%;
+}
+
+.assortiment-nav__img {
+  border-radius: 15px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.assortiment-nav {
+  margin-top: 28px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.assortiment-nav .assortiment-nav__slide {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  opacity: 0.7;
+}
+
+.assortiment-nav .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border-radius: 50%;
+  opacity: 0.7;
+  background-color: var(--grey-color);
+}
+@media (min-width: 1025px) {
+  .arrow:hover {
+    opacity: 1;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: var(--dark-color);
 }
 
 .footer {
