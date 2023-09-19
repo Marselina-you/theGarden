@@ -1,9 +1,8 @@
 const teamSlider = document.querySelector('.team-slider');
 const assortimentSlider = document.querySelector('.assortiment-slider');
 const assortimentSliderNav = document.querySelector('.assortiment-nav');
-console.log(teamSlider);
-console.log(assortimentSlider);
-console.log(assortimentSliderNav);
+const eventSlider = document.querySelector('.event-slider');
+
 
 
 if (teamSlider) {
@@ -40,4 +39,41 @@ if (assortimentSlider) {
     },
   });
 }
+
+
+if (eventSlider) {
+  const workSlider = new Swiper(eventSlider, {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".event__next",
+      prevEl: ".event__prev",
+    },
+  });
+
+  workSlider.on('slideChange', function () {
+
+    eventBtns.forEach(el => {
+      el.classList.remove('event-nav__btn--active')
+          });
+          document.querySelector(`.event-nav__btn[data-index="${workSlider.realIndex}"]`).classList.add('event-nav__btn--active');
+  });
+  const eventBtns = document.querySelectorAll('.event-nav__btn');
+
+  eventBtns.forEach((el, idx) => {
+
+    el.setAttribute('data-index', idx)
+    el.addEventListener('click', (e) => {
+    const index = e.currentTarget.dataset.index;
+
+    eventBtns.forEach(el => {
+el.classList.remove('event-nav__btn--active')
+    });
+    e.currentTarget.classList.add('event-nav__btn--active');
+
+    workSlider.slideTo(index);
+    })
+  })
+}
+
 
