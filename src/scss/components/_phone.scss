@@ -1,5 +1,9 @@
-.list {
+.phone {
   margin-bottom: 70px;
+
+  &__list {
+    margin-bottom: 20px;
+  }
 
   &__inner {
     display: flex;
@@ -18,7 +22,7 @@
       position: absolute;
       width: 48px;
       height: 48px;
-      background-image: url(../img/svg/li.svg);
+      background-image: url(../img/svg/check.svg);
 
 
     }
@@ -29,11 +33,9 @@
   }
 
   &__btn {
-
+text-align: right;
     font-size: 30px;
 
-    .btn {
-      padding: 50px 80px;
-    }
+
   }
 }
