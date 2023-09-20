@@ -48,6 +48,10 @@
       //column-gap: 1px;
       row-gap: 20px;
     }
+    @include mobile {
+      row-gap: 1px;
+      column-gap: 1px;
+    }
   }
 
 

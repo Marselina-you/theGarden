@@ -11,6 +11,10 @@
     &:focus {
       border: 1px solid var(--grey-color);
         box-shadow: 0 5px 30px 0 #ccc;
+
+        .category__name {
+          color: var(--light-yellow-color);
+        }
     }
     @include for-desktop {
       &:hover {
@@ -23,6 +27,23 @@
     }
     &:active {
       border: 1px solid var(--orange-color);
+
+      .category__name {
+        color: var(--orange-color);
+      }
+
+    }
+
+    @include tablet {
+      grid-column: 4 span;
+    }
+    @include small-tablet {
+      grid-column: 6 span;
+    }
+    @include mobile {
+      padding: 9px 0;
+      grid-column: 12 span;
+
     }
 }
 
@@ -34,22 +55,45 @@
 
   &__content {
     position: absolute;
-    width: 70%;
+    width: 80%;
     //top: 60%;
     //padding: 15px 0;
+
+    @include mobile {
+      position: relative;
+      width: 100%;
+}
+
+
   }
   &__img {
+
     img {
       width: 100%;
     }
+    @include mobile {
+      display: none;
+    }
   }
   &__name {
-    padding: 10px 0;
+    padding: 10px;
     font-size: 24px;
     font-weight: 700;
     color: var(--light-color);
     line-height: 120%;
     text-transform: capitalize;
+
+    @include old-desktop {
+      font-size: 22px;
+
+    }
+    @include tablet {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    @include mobile {
+      padding: 20px 0;
+    }
 
 
 
@@ -106,6 +150,10 @@
     .category__content {
       bottom: 5px;
       left: 15%;
+
+      @include mobile {
+        left: 0;
+      }
     }
   }
   &--5 {
@@ -130,6 +178,11 @@
     .category__name {
       border-radius: 15px 0 0 15px;
       background-color: #776E66;
+
+      span {
+        padding-left: 0;
+        padding-right: 15px;
+      }
     }
     .category__content {
       right: 0;
@@ -146,12 +199,17 @@
       span {
         padding-left: 0;
 
+
       }
 
     }
     .category__content {
       bottom: 5px;
       left: 15%;
+
+      @include mobile {
+        left: 0;
+      }
     }
   }
 
@@ -215,6 +273,29 @@
         }
     }
   }
+
+
+
+}
+.category__item {
+
+  @include mobile {
+
+    .category__name {
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+
+      span {
+        padding: 0;
+
+      }
+
+    }
+
+  }
+
+
 
 
 

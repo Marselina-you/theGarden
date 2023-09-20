@@ -150,6 +150,9 @@ a {
   @include tablet {
     display: block;
   }
+  @include small-tablet {
+    color: var(--dark-violet-color);
+  }
 }
 
 .burger::before,

@@ -93,11 +93,35 @@ if (recommendedSlider) {
   var swiper = new Swiper(".recommended-slider", {
     slidesPerView: 6,
     spaceBetween: 30,
+    loop: true,
     freeMode: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+    autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+     },
+
+
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+
+      576: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 7,
+      }
+    }
   });
 }
 
