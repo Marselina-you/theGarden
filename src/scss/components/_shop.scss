@@ -1,0 +1,72 @@
+.shop {
+  margin-top: 150px;
+  background-color: inherit;
+
+  &__top {
+
+  }
+  &__menu {
+
+  }
+  &__main {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--grey-color);
+    transition: color .3s ease-in-out;
+
+    &:focus {
+      color: var(--violet-color);
+    }
+
+
+      @include for-desktop {
+
+        &:hover {
+          color: var(--violet-color);
+          }
+        }
+    &:active {
+      color: var(--orange-color);
+    }
+  }
+
+  &__search {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 45px;
+
+    @include old-desktop {
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+    @include small-tablet {
+      //column-gap: 1px;
+      row-gap: 20px;
+    }
+  }
+  &__btn {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  &__bottom {
+    padding: 0 15px;
+  }
+  &__pagination {
+    margin-bottom: 20px;
+  }
+
+  &__nav {
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+}
+

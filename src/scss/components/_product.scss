@@ -1,0 +1,143 @@
+.product {
+
+
+
+  &__item {
+    position: relative;
+    grid-column: 3 span;
+    padding: 15px;
+    background-color: var(--light-color);
+    border: 1px solid var(--light-color);
+
+    transition: all .3s ease-in-out;
+
+    &:focus {
+      border: 1px solid var(--grey-color);
+        box-shadow: 0 5px 30px 0 #ccc;
+    }
+
+
+    @include for-desktop {
+      &:hover {
+        border: 1px solid var(--grey-color);
+        box-shadow: 0 5px 30px 0 #ccc;
+      }
+    }
+    &:active {
+      border: 1px solid var(--orange-color);
+    }
+
+
+
+  }
+
+  &__link {
+    &:focus {
+      .product__cart {
+        opacity: 1;
+      }
+      .product__btns {
+        opacity: 1;
+      }
+
+    }
+
+    @include for-desktop {
+
+      &:hover {
+
+        .product__cart {
+          opacity: 1;
+        }
+        .product__btns {
+          opacity: 1;
+        }
+
+      }
+    }
+
+    &:active {
+      .product__cart {
+        opacity: .8;
+      }
+      .product__btns {
+        opacity: .8;
+      }
+    }
+  }
+
+  &__btns {
+position: absolute;
+top: 30px;
+left: 30px;
+opacity: 0;
+transition: opacity .3s ease-in-out;
+  }
+  &__cart {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 22%;
+    transition: opacity .3s ease-in-out;
+  }
+
+  &__btn {
+
+    border-radius: 50%;
+    border: 1px solid var(--blue-color);
+    padding: 3px 4px;
+    background-color: var(--blue-color);
+    transition: background-color .4s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:focus {
+      background-color: var(--light-color);
+      svg{
+        fill: var(--blue-color);
+      }
+
+    }
+    svg {
+      fill: var(--light-color);
+      width: 20px;
+      height: 20px;
+      transition: fill .4s ease-in-out;
+    }
+    @include for-desktop {
+
+      svg {
+        &:hover {
+          fill: var(--blue-color);
+        }
+      }
+    }
+    @include for-desktop {
+      &:hover {
+         background-color: var(--light-color);
+        }
+
+    }
+    &:active {
+      border: 1px solid var(--orange-color);
+      background-color: var(--orange-color);
+    }
+
+  }
+  &__content {
+    padding: 15px 0;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-violet-color);
+    line-height: 150%;
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--dark-violet-color);
+    //line-height: 100%;
+  }
+}

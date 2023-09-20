@@ -3,7 +3,7 @@
   font-weight: 700;
   padding: 12px 24px;
   text-transform: capitalize;
-  transition: all .9s ease-in-out;
+  transition: all .4s ease-in-out;
 
   &--yellow {
     border: 1px solid var(--yellow-color);
@@ -43,10 +43,9 @@
   }
   &--grey {
     color: var(--dark-violet-color);
-    //border: 1px solid var(--dark-violet-color);
     background-color: var(--grey-color);
     color: var(--dark-violet-color);
-    font-size: 30px;
+    font-size: 28px;
 
     &:focus {
       background-color: var(--light-yellow-color);
@@ -56,7 +55,6 @@
     @include for-desktop {
 
       &:hover {
-        //border: 1px solid var(--dark-violet-color);
         background-color: var(--dark-violet-color);
         color: var(--light-color);
 
@@ -78,6 +76,104 @@
     @include mobile {
       font-size: 18px;
     }
+  }
+
+  &--blue {
+    border: 1px solid var(--blue-color);
+    background-color: var(--blue-color);
+    color: var(--light-color);
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    &:focus {
+      border: 1px solid var(--blue-color);
+      background-color: var(--light-color);
+      color: var(--blue-color);
+    }
+
+    @include for-desktop {
+
+      &:hover {
+        border: 1px solid var(--blue-color);
+      background-color: var(--light-color);
+      color: var(--blue-color);
+      }
+    }
+    &:active {
+      color: var(--orange-color);
+    }
+
+  }
+
+  &--light {
+    border: 1px solid var(--violet-color);
+    background-color: inherit;
+    color: var(--violet-color);
+
+    &:focus {
+      border: 1px solid var(--violet-color);
+      background-color: var(--violet-color);
+      color: var(--light-color);
+    }
+
+    @include for-desktop {
+
+      &:hover {
+        border: 1px solid var(--violet-color);
+        background-color: var(--violet-color);
+        color: var(--light-color);
+      }
+
+    }
+    &:active {
+
+        border: 1px solid var(--violet-color);
+        background-color: var(--light-color);
+        color: var(--orange-color);
+
+    }
+
+  }
+  &--violet {
+    border: 1px solid var(--violet-color);
+    background-color: var(--violet-color);
+    color: var(--light-color);
+    transition: all .4s ease-in-out;
+    font-size: 28px;
+
+    &:focus {
+      border: 1px solid var(--violet-color);
+    background-color: var(--violet-color);
+    color: var(--light-color);
+    }
+
+    @include for-desktop {
+
+      &:hover {
+        border: 1px solid var(--violet-color);
+        background-color: inherit;
+        color: var(--violet-color);
+      }
+
+    }
+    &:active {
+
+        border: 1px solid var(--violet-color);
+        background-color: var(--light-color);
+        color: var(--orange-color);
+
+    }
+
+    @include tablet {
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+
   }
 
 
