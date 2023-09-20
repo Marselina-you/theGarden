@@ -18,6 +18,11 @@
       height: 44px;
       fill: var(--grey-color);
 
+      @include small-tablet {
+        width: 24px;
+        height: 24px;
+      }
+
     }
 
 
