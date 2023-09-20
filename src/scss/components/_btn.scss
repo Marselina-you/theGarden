@@ -9,19 +9,36 @@
     border: 1px solid var(--yellow-color);
     background-color: var(--yellow-color);
     color: var(--dark-violet-color);
+    font-size: 32px;
+    &:focus {
+      background-color: var(--light-yellow-color);
+      //outline-offset: 3px;
+    }
 
-
-  @include for-desktop {
-
-    &:hover {
-      border: 1px solid var(--yellow-color);
-      background-color: var(--dark-violet-color);
-      color: var(--yellow-color);
-
-
+    @include for-desktop {
+      &:hover {
+        border: 1px solid var(--yellow-color);
+        background-color: var(--dark-violet-color);
+        color: var(--yellow-color);
+      }
+    }
+    &:active {
+      color: var(--orange-color);
 
     }
-  }
+    @include tablet {
+      font-size: 26px;
+    }
+    @include small-tablet {
+      font-size: 24px;
+    }
+    @include mobile {
+      font-size: 20px;
+    }
+
+
+
+
 
   }
   &--grey {
@@ -29,6 +46,12 @@
     //border: 1px solid var(--dark-violet-color);
     background-color: var(--grey-color);
     color: var(--dark-violet-color);
+    font-size: 30px;
+
+    &:focus {
+      background-color: var(--light-yellow-color);
+      //outline-offset: 3px;
+    }
 
     @include for-desktop {
 
@@ -40,6 +63,20 @@
 
 
       }
+    }
+    &:active {
+      color: var(--orange-color);
+    }
+
+
+    @include tablet {
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 18px;
     }
   }
 

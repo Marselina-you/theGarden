@@ -3,14 +3,28 @@
   padding: 50px 0;
   background-image: url(../img/team-bg.jpg);
 
+  @include small-tablet {
+    margin-bottom: 20px;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column-reverse
+
+    }
   }
   &__title {
     margin: 0;
     margin-bottom: 50px;
     color: var(--light-color);
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
   }
   &__slider-nav {
     transform: translate(12px, 4px);
@@ -29,6 +43,10 @@
     font-size: 32px;
     font-weight: 700;
     color: var(--orange-color);
+
+    @include tablet {
+      font-size: 24px;
+    }
   }
 
   &__descr {
@@ -38,12 +56,24 @@
     font-weight: 400;
     line-height: 100%;
     color: var(--light-color);
+
+    @include tablet {
+      font-size: 22px;
+    }
+    @include small-tablet {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .event-nav {
   position: relative;
   grid-column: 4 span;
+
+  @include small-tablet {
+    text-align: center;
+  }
+
 
 
 
@@ -61,18 +91,49 @@
     line-height: 150%;
     color: var(--light-color);
 
+    @include tablet {
+
+padding-left: 60px ;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 200%;
+
+
+    }
+    @include small-tablet {
+      border-radius: 15px;
+      padding: 2px 20px;
+      width: 230px;
+      color: var(--dark-violet-color);
+      font-weight: 700;
+      background-color: var(--grey-color);
+    }
+
 
 
     &::after {
       content: "";
       position: absolute;
+
       left: 0;
       top: 17px;
       border-radius: 100%;
       width: 12px;
       height: 12px;
       background-color: currentColor;
+
+      @include tablet {
+        top: 1px;
+        border-radius: 15px;
+        width: 30px;
+        height: 30px;
+
     }
+    @include small-tablet {
+      width: 0;
+      height: 0;
+    }
+  }
 
     &:focus {
       outline: none;

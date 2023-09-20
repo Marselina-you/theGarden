@@ -3,12 +3,22 @@
   background-color: var(--light-yellow-color);
   padding: 40px 0;
 
+  @include small-tablet {
+    padding: 17px 0;
+  }
+
   &__title {
     margin: 0;
-
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     text-align: center;
     color: var(--dark-violet-color);
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
+
+
+
 
 
   }
@@ -33,7 +43,7 @@
   white-space: nowrap;
   color: var(--orange-color);
   flex-shrink: 0;
-text-transform: uppercase;
+  text-transform: uppercase;
   animation: ticker 5s linear infinite;
 
   &-img {
@@ -44,15 +54,32 @@ text-transform: uppercase;
       width: 100px;
       height: 100px;
     }
+    @include tablet {
+      margin-bottom: 5px;
+
+      svg {
+
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  @include tablet {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+  @include small-tablet {
+    font-size: 16px;
+    padding: 0 10px;
   }
 
 }
 
-//@keyframes ticker {
- // 0% {
-   //transform: translateZ(0);
-  //}
-  //to {
-   //transform: translate3d(-100%, 0, 0);
-  //}
-//}
+@keyframes ticker {
+  0% {
+   transform: translateZ(0);
+  }
+  to {
+   transform: translate3d(-100%, 0, 0);
+  }
+}

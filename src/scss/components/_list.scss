@@ -1,10 +1,19 @@
 .list {
   margin-bottom: 70px;
 
+  @include small-tablet {
+    margin-bottom: 20px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include small-tablet {
+      flex-direction: column;
+
+    }
   }
 
   &__item {
@@ -19,8 +28,22 @@
       width: 48px;
       height: 48px;
       background-image: url(../img/svg/li.svg);
+      background-repeat: no-repeat;
+
+      @include tablet {
+        background-position: center;
+        background-size: 70%;
+      }
 
 
+    }
+
+    @include tablet {
+      font-size: 26px;
+    }
+    @include small-tablet {
+      font-size: 20px;
+      line-height: 160%;
     }
   }
   &__txt {
@@ -30,10 +53,15 @@
 
   &__btn {
 
-    font-size: 32px;
+
 
     .btn {
       padding: 50px 80px;
+
+      @include tablet {
+        margin-top: 15px;
+        padding: 30px 60px;
+      }
     }
   }
 }

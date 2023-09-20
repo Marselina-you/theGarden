@@ -9,8 +9,11 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/sliders.js */ "./src/js/components/sliders.js");
-/* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_sliders_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/burger.js */ "./src/js/components/burger.js");
+/* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_burger_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders.js */ "./src/js/components/sliders.js");
+/* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_sliders_js__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 /***/ }),
@@ -144,6 +147,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/components/burger.js":
+/*!*************************************!*\
+  !*** ./src/js/components/burger.js ***!
+  \*************************************/
+/***/ (() => {
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header__nav');
+const overlay = document.querySelector('.overlay');
+burger.addEventListener('click', e => {
+  burger.classList.toggle('burger--active');
+  menu.classList.toggle('header__nav--active');
+  overlay.classList.toggle('overlay--active');
+});
+
+/***/ }),
+
 /***/ "./src/js/components/sliders.js":
 /*!**************************************!*\
   !*** ./src/js/components/sliders.js ***!
@@ -162,6 +182,14 @@ if (teamSlider) {
     pagination: {
       el: ".swiper-pagination",
       clickable: true
+    },
+    breakpoints: {
+      200: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 3
+      }
     }
   });
 }

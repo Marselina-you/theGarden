@@ -21,6 +21,8 @@
         margin-bottom: 30px;
       }
 
+      margin-right: 0;
+
     }
   }
 
@@ -35,7 +37,7 @@
     }
 
     &:focus {
-      outline-offset: 2px solid var(--orange-color);
+      color: var(--light-yellow-color);
 
 
     }

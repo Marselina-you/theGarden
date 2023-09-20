@@ -1,6 +1,10 @@
 .assortiment {
   margin-bottom: 70px;
 
+  @include small-tablet {
+    margin-bottom: 20px;
+  }
+
 
 
 }
@@ -38,12 +42,23 @@
   &-title {
     //margin-top: 60px;
     font-size: 40px;
+
+    @include tablet {
+      margin: 0;
+      padding: 0;
+    }
   }
   &-descr {
     font-size: 24px;
     font-weight: 700;
     line-height: 140%;
     max-width: 60%;
+
+    @include small-tablet {
+      font-size: 20px;
+      font-weight: 400;
+      max-width: 70%;
+    }
 
   }
 
@@ -60,8 +75,11 @@
 
 .assortiment-nav {
   margin-top: 28px;
-
   box-sizing: border-box;
+
+  @include small-tablet {
+    display: none;
+  }
 
 }
 .assortiment-nav .assortiment-nav__slide {
@@ -83,12 +101,16 @@
   border-radius: 50%;
   opacity: .7;
   background-color: var(--grey-color);
+  transition: opacity .3s ease-in-out;
 
   @include for-desktop {
 
     &:hover {
       opacity: 1;
     }
+  }
+  @include small-tablet {
+    padding: 4px 14px;
   }
 }
 .swiper-button-next, .swiper-button-prev {

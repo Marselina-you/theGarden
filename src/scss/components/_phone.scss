@@ -1,15 +1,25 @@
 .phone {
   margin-bottom: 70px;
 
-  &__list {
+  @include small-tablet {
     margin-bottom: 20px;
   }
+
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+      justify-content: center;
+          }
+
+
+
   }
+
+
 
   &__item {
     position: relative;
@@ -23,19 +33,66 @@
       width: 48px;
       height: 48px;
       background-image: url(../img/svg/check.svg);
+      background-repeat: no-repeat;
+
+      @include tablet {
+        background-position: center;
+        background-size: 70%;
+      }
 
 
     }
+
+    @include tablet {
+      font-size: 26px;
+    }
+    @include small-tablet {
+      font-size: 20px;
+      line-height: 160%;
+    }
   }
+  &__left {
+
+    @include small-tablet {
+      width: 30%;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  &__right {
+
+    @include small-tablet {
+      width: 70%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+
+
+  }
+
   &__txt {
     display: inline-block;
     margin-left: 57px;
   }
 
   &__btn {
-text-align: center;
-    font-size: 30px;
 
 
+
+    .btn {
+      padding: 50px 80px;
+
+      @include tablet {
+        margin-top: 15px;
+        padding: 30px 60px;
+      }
+    }
+    @include mobile {
+      display: flex;
+      justify-content: center;
+    }
   }
+
 }

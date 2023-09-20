@@ -2,10 +2,18 @@
   margin-bottom: 70px;
   background-color: inherit;
 
+  @include small-tablet {
+    margin-bottom: 20px;
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 50px;
+
+    @include old-desktop {
+      gap: 15px;
+    }
   }
   &__img {
     grid-column: 7 span;
@@ -13,12 +21,31 @@
     img {
       width: 70%;
       height: 100%;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+    @include small-tablet {
+      display: none;
     }
   }
   &__block {
     grid-column: 5 span;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+    @include small-tablet {
+      grid-column: 12 span;
+    }
 
   }
 
@@ -37,6 +64,14 @@
       font-weight: 400;
       font-style: italic;
     }
+
+    @include old-desktop {
+      font-size: 28px;
+    }
+    @include tablet {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
   &__title {
     display: inline-block;
@@ -45,10 +80,18 @@
     margin-bottom: 70px;
     text-align: left;
 
+    @include tablet {
+      margin-bottom: 20px;
+    }
+
   }
   &__btn {
     margin-bottom: 60px;
     font-size: 30px;
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
   }
   &__list {
 

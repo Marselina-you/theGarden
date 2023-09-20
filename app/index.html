@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <div class="site-container">
-    <header class="header">
+    <header class="header container-fluid">
   <div class="container-middle header__container">
     <div class="header__left">
       <div class="header__logo">
@@ -31,21 +31,14 @@
       <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
       <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-
-    </ul>
+      <li class="nav__item"><a href="#" class="nav__link">Корзина</a></li>
+</ul>
   </nav>
- <!--
-<button class="btn-reset burger" aria-label="Открыть меню">
+  <button class="btn-reset burger" aria-label="Открыть меню">
     <span class="burger__line"></span>
   </button>
- -->
-  <button class="btn-reset cart__btn nav__link">
-    Корзина
-    <div class="cart__count"></div>
-  </button>
 </div>
-
-  </div>
+</div>
 </header>
 
     <main class="main">
@@ -62,7 +55,7 @@
   </div>
 </section>
 
-      <section class="ticker-block">
+     <section class="ticker-block">
   <h2 class="title ticker-block__title">
     Почему Выбирают Нас
   </h2>
@@ -136,7 +129,7 @@
   </div>
 </section>
 
-      <section class="categories">
+    <section class="categories">
   <div class="categories__container container-middle">
     <div class="categories__inner">
       <ul class="categories__list list-reset">
@@ -217,7 +210,7 @@
   </div>
 </section>
 
-      <section class="team">
+          <section class="team">
   <div class="team__container container">
 
     <h2 class="team__title title">Наша команда</h2>
@@ -310,7 +303,7 @@
 
 </section>
 
-      <section class="quotes">
+       <section class="quotes">
   <div class="quotes__container container-middle">
     <ul class="list-reset quotes__list">
       <li class="quotes__item quotes__item--1">
@@ -593,12 +586,12 @@
   </div>
 </section>
 
-      <section class="event">
+     <section class="event">
   <div class="event__container container">
     <h2 class="event__title title">
       Мероприятия
     </h2>
-    <div class="event__content grid">
+    <div class="event__content">
       <ul class="list-reset event-nav">
        <li class="event-nav__item">
           <button class="btn-reset event-nav__btn">11 Марта 2022</button>
@@ -671,7 +664,7 @@
           <img src="img/phone.png" alt="">
         </div>
       </div>
-      <div class="phone__rightt">
+      <div class="phone__right">
         <ul class="phone__list list-reset">
           <li class="phone__item">
             <span class="phone__txt">
@@ -710,7 +703,7 @@
   </div>
 </section>
 
-      <section class="contacts">
+       <section class="contacts">
   <div class="contacts__container container">
     <div class="contacts__inner">
       <div class="contacts__img">
@@ -791,6 +784,7 @@
     </div>
   </div>
 </footer>
+<div class="overlay"></div>
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

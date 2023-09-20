@@ -16,6 +16,16 @@ if (teamSlider) {
       el: ".swiper-pagination",
       clickable: true,
     },
+
+    breakpoints: {
+
+      200: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      }
+    }
   });
 }
 if (assortimentSlider) {
@@ -26,6 +36,8 @@ if (assortimentSlider) {
     slidesPerView: 7,
     freeMode: true,
     watchSlidesProgress: true,
+
+
   });
   var swiper2 = new Swiper(".assortiment-slider", {
     loop: true,
@@ -37,6 +49,7 @@ if (assortimentSlider) {
     thumbs: {
       swiper: swiper,
     },
+    
   });
 }
 
