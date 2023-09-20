@@ -141,3 +141,61 @@ transition: opacity .3s ease-in-out;
     //line-height: 100%;
   }
 }
+.recommended-product {
+
+  &__content {
+    padding: 10px 0;
+  }
+  &__name {
+    font-size: 20px;
+    line-height: 110%;
+  }
+  &__price {
+    font-size: 18px;
+    line-height: 100%;
+  }
+&__img {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 80%;
+    transition: filter .3s ease-in-out;
+  }
+}
+
+  &__item {
+    border: none;
+    padding: 0;
+    box-shadow: none;
+
+    @include for-desktop {
+      &:hover {
+        border: none;
+      padding: 0;
+      box-shadow: none;
+
+      .recommended-product__img {
+        img {
+          filter: brightness(60%)
+        }
+      }
+      }
+    }
+
+
+
+  }
+  &__btns {
+    top: 70px;
+    left: 77px;
+
+   .product__btn svg {
+      fill: var(--light-color);
+      width: 30px;
+      height: 30px;
+      transition: fill .4s ease-in-out;
+    }
+
+  }
+
+}

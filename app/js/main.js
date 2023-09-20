@@ -174,6 +174,7 @@ const teamSlider = document.querySelector('.team-slider');
 const assortimentSlider = document.querySelector('.assortiment-slider');
 const assortimentSliderNav = document.querySelector('.assortiment-nav');
 const eventSlider = document.querySelector('.event-slider');
+const recommendedSlider = document.querySelector('.recommended-slider');
 if (teamSlider) {
   var swiper = new Swiper(".team-slider", {
     slidesPerView: 3,
@@ -239,6 +240,17 @@ if (eventSlider) {
       e.currentTarget.classList.add('event-nav__btn--active');
       workSlider.slideTo(index);
     });
+  });
+}
+if (recommendedSlider) {
+  var swiper = new Swiper(".recommended-slider", {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    }
   });
 }
 
