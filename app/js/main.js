@@ -247,15 +247,13 @@ if (recommendedSlider) {
     slidesPerView: 6,
     spaceBetween: 30,
     loop: true,
+    lazy: true,
     freeMode: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true
     },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false
-    },
+    autoplay: true,
     breakpoints: {
       0: {
         slidesPerView: 2,
