@@ -1,7 +1,4 @@
 .product {
-
-
-
   &__item {
     position: relative;
     grid-column: 3 span;
@@ -13,10 +10,8 @@
     &:focus {
       border: 1px solid var(--grey-color);
         box-shadow: 0 5px 30px 0 #ccc;
-    }
-
-
-    @include for-desktop {
+      }
+      @include for-desktop {
       &:hover {
         border: 1px solid var(--grey-color);
         box-shadow: 0 5px 30px 0 #ccc;
@@ -36,9 +31,7 @@
     @include mobile {
       grid-column: 12 span;
     }
-
-
-  }
+}
 
   &__link {
     &:focus {
@@ -48,7 +41,6 @@
       .product__btns {
         opacity: 1;
       }
-
     }
 
     @include for-desktop {
@@ -114,10 +106,9 @@ transition: opacity .3s ease-in-out;
   }
 
   &__btn {
-
-    border-radius: 50%;
+    border-radius: 100%;
     border: 1px solid var(--blue-color);
-    padding: 3px 4px;
+    padding: 5px 4px 1px 4px;
     background-color: var(--blue-color);
     transition: background-color .4s ease-in-out;
 
@@ -203,92 +194,5 @@ transition: opacity .3s ease-in-out;
     }
 
   }
-}
-.recommended-product {
-
-  &__content {
-    padding: 10px 0;
-  }
-  &__name {
-    font-size: 20px;
-    line-height: 110%;
-
-    @include old-desktop {
-      font-size: 18px;
-    }
-
-    @include small-tablet {
-      font-size: 16px;
-    }
-  }
-  &__price {
-    font-size: 18px;
-    line-height: 100%;
-
-
-    @include small-tablet {
-      font-size: 16px;
-    }
-  }
-&__img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  img {
-    width: 80%;
-    transition: filter .3s ease-in-out;
-  }
-
-
-}
-
-  &__item {
-    border: none;
-    padding: 0;
-    box-shadow: none;
-
-    @include for-desktop {
-      &:hover {
-        border: none;
-      padding: 0;
-      box-shadow: none;
-
-      .recommended-product__img {
-        img {
-          filter: brightness(60%)
-        }
-      }
-      }
-    }
-
-
-
-  }
-  &__btns {
-    position: absolute;
-    top: 30%;
-    left: 32%;
-
-    @include big-desktop {
-      top: 25%;
-      left: 26%;
-    }
-    @include old-desktop {
-      top: 21%;
-      left: 20%;
-    }
-
-   .product__btn svg {
-      fill: var(--light-color);
-      width: 25px;
-      height: 25px;
-      transition: fill .4s ease-in-out;
-
-
-    }
-
-  }
-
-
+  
 }

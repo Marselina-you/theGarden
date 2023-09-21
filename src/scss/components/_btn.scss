@@ -116,6 +116,7 @@
     background-color: inherit;
     color: var(--violet-color);
 
+
     &:focus {
       border: 1px solid var(--violet-color);
       background-color: var(--violet-color);
@@ -146,6 +147,7 @@
     color: var(--light-color);
     transition: all .4s ease-in-out;
     font-size: 28px;
+    font-weight: 400;
 
     &:focus {
       border: 1px solid var(--violet-color);

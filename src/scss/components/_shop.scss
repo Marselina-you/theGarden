@@ -17,9 +17,7 @@
     &:focus {
       color: var(--violet-color);
     }
-
-
-      @include for-desktop {
+    @include for-desktop {
 
         &:hover {
           color: var(--violet-color);
@@ -27,6 +25,10 @@
         }
     &:active {
       color: var(--orange-color);
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
     }
   }
 
@@ -55,7 +57,9 @@
 
   &__bottom {
 padding: 0 15px;
+margin-top: 50px;
 margin-bottom: 50px;
+
   }
 
 &__btn {
@@ -76,7 +80,13 @@ margin-bottom: 50px;
   }
   &__btn {
     &:not(:last-child) {
-      margin-bottom: 15px;
+
+      margin-right: 15px;
+
+      @include mobile {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
     }
   }
 }
