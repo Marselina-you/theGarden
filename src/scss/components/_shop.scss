@@ -6,6 +6,13 @@
     padding: 0 15px;
     margin-bottom: 20px;
   }
+  &__menu {
+    display: flex;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
 
 
   &__main {
