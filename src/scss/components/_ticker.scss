@@ -81,11 +81,12 @@
     }
   }
   @include tablet {
-    font-size: 18px;
-    padding: 0 20px;
+    width: 170px;
+    font-size: 16px;
+    //padding: 0 20px;
   }
   @include small-tablet {
-    font-size: 16px;
+
     padding: 0 10px;
   }
 

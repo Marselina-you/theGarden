@@ -89,6 +89,11 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-middle);
+
+  @include small-tablet {
+    //padding: 0;
+    max-width: 100%;
+  }
 }
 .container-fluid {
   margin: 0 auto;

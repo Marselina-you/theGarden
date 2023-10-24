@@ -5,6 +5,7 @@
   z-index: 9000;
 
   @include small-tablet {
+    position: relative;
     background-color: transparent;
   }
 
@@ -12,6 +13,10 @@
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @include small-tablet {
+      padding: 0;
+    }
 
   }
 
@@ -25,8 +30,8 @@
     @include tablet {
       grid-column: 8 span;
   }
-  @include mobile {
-    grid-column: 10 span;
+  @include small-tablet {
+    display: none;
   }
 }
   &__right {
