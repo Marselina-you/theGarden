@@ -23,6 +23,10 @@
 
     @include small-tablet {
       margin-top: 70px;
+
+      img {
+        width: 80%;
+      }
     }
   }
   &__content {

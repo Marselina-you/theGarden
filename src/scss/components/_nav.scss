@@ -15,19 +15,15 @@
     &:not(:last-child) {
       margin-right: 40px;
     }
-
-
-
-
     @include tablet {
 
       &:not(:last-child) {
+        margin-right: 0;
         margin-bottom: 30px;
       }
 
-      margin-right: 0;
-
     }
+
   }
 
   &__link {

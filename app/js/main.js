@@ -13,7 +13,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_burger_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_burger_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders.js */ "./src/js/components/sliders.js");
 /* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_sliders_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_to_top__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/to-top */ "./src/js/components/to-top.js");
+/* harmony import */ var _components_to_top_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/to-top.js */ "./src/js/components/to-top.js");
+/* harmony import */ var _components_ticker_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/ticker.js */ "./src/js/components/ticker.js");
+/* harmony import */ var _components_ticker_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_ticker_js__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -277,6 +280,24 @@ if (recommendedSlider) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./src/js/components/ticker.js":
+/*!*************************************!*\
+  !*** ./src/js/components/ticker.js ***!
+  \*************************************/
+/***/ (() => {
+
+const sections = document.querySelectorAll(".section-ticker");
+console.log(sections);
+[...sections].forEach(section => {
+  const checkbox = section.querySelector("input");
+  console.log(checkbox);
+  checkbox.addEventListener("change", () => {
+    section.classList.toggle("enable-animation");
+  });
+});
 
 /***/ }),
 
